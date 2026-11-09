@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shafra Café | System Access Portal</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #02060d;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 950px;
+            text-align: center;
+        }
+
+        .logo {
+            color: #d9b77c;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #91a0ae;
+            font-size: 13px;
+            letter-spacing: 2px;
+            margin-bottom: 55px;
+        }
+
+        .heading h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+
+        .heading p {
+            color: #aab5c0;
+            font-size: 15px;
+            margin-bottom: 45px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: #0b1521;
+            border: 1px solid #203344;
+            border-radius: 15px;
+            padding: 40px 30px;
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            border-color: #d9b77c;
+            box-shadow: 0 0 25px rgba(217, 183, 124, 0.15);
+        }
+
+        .icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            font-size: 23px;
+            margin-bottom: 15px;
+            color: #d9b77c;
+        }
+
+        .card p {
+            color: #aab5c0;
+            font-size: 14px;
+            line-height: 1.7;
+            min-height: 48px;
+            margin-bottom: 28px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #183b36;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 13px 25px;
+            border-radius: 7px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #246056;
+            box-shadow: 0 0 15px rgba(49, 170, 169, 0.3);
+        }
+
+        footer {
+            margin-top: 55px;
+            color: #657586;
+            font-size: 12px;
+        }
+
+        @media (max-width: 650px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .heading h1 {
+                font-size: 28px;
+            }
+
+            .card {
+                padding: 35px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- HEADER -->
+        <header>
+            <div class="logo">SHAFRA CAFÉ</div>
+            <div class="subtitle">SYSTEM ACCESS PORTAL</div>
+        </header>
+
+        <!-- WELCOME SECTION -->
+        <section class="heading">
+            <h1>Welcome to Shafra Café</h1>
+            <p>Please select the system you want to access.</p>
+        </section>
+
+        <!-- SYSTEM ACCESS CARDS -->
+        <section class="cards">
+
+            <!-- CUSTOMER SIDE -->
+            <div class="card">
+                <div class="icon">☕</div>
+
+                <h2>Customer Side</h2>
+
+                <p>
+                    Explore our café menu, discover your favorites,
+                    and place your orders.
+                </p>
+
+                <a href="./CUSTOMER/" class="btn">
+                    Visit Customer Side →
+                </a>
+            </div>
+
+            <!-- EMPLOYEE SIDE -->
+            <div class="card">
+                <div class="icon">👨‍🍳</div>
+
+                <h2>Employee Side</h2>
+
+                <p>
+                    Access employee features, manage customer orders,
+                    and assist with café operations.
+                </p>
+
+                <a href="./EMPLOYEE/" class="btn">
+                    Visit Employee Side →
+                </a>
+            </div>
+
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            © 2026 Shafra Café. All Rights Reserved.
+        </footer>
+
+    </main>
+
+</body>
+</html>
